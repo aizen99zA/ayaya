@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="discord-banner">
+            <div>
+                <span class="discord-name">RADAN</span>
+                <span class="discord-tagline">Do you believe in the human soul?</span>
+            </div>
+            <a class="discord-link" href="#contact">Discord: the.radan</a>
+        </div>
+        <div class="top-bar">
+            <a class="logo" href="#home">Gaming Hub</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#steam">Steam</a>
+            <a href="steamars.html">Steamars</a>
+            <a href="#register">Register</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="profile-banner-top">
+        <div class="profile-card">
+            <div class="profile-card-left">
+                <span class="profile-label">About Me</span>
+                <h2>RADAN</h2>
+                <p class="profile-description">Welcome to the official site. Built by the.radan.</p>
+            </div>
+            <div class="profile-card-right">
+                <span class="discord-badge">Discord</span>
+                <p class="discord-name">the.radan</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Next-level gaming</p>
+                <h1>Play the latest titles in a bold, modern space.</h1>
+                <p>Explore curated collections, discover new releases, and join a community built for gamers.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#games">Start Exploring</a>
+                    <a class="button button-secondary" href="#contact">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="stats">
+                    <div>
+                        <span>120+</span>
+                        <p>Games</p>
+                    </div>
+                    <div>
+                        <span>24/7</span>
+                        <p>Support</p>
+                    </div>
+                    <div>
+                        <span>4.9</span>
+                        <p>Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="auth-section" id="register">
+            <div class="section-header">
+                <p class="eyebrow">Login</p>
+                <h2>Join the community or continue with your account</h2>
+                <p class="about-copy">Create a local profile, upload an avatar, and keep your Steamars experience connected.</p>
+            </div>
+            <div class="register-grid">
+                <div class="signup-panel">
+                    <div class="auth-switch">
+                        <button type="button" class="button button-tertiary auth-toggle active" data-mode="login">Login with account</button>
+                        <button type="button" class="button button-tertiary auth-toggle" data-mode="create">Register new account</button>
+                    </div>
+                    <p class="mode-note" id="auth-mode-note">Enter your existing username and password to sign in.</p>
+                    <form id="register-form" class="register-form">
+                        <div class="form-group">
+                            <label for="reg-name">Username</label>
+                            <input id="reg-name" type="text" name="name" placeholder="Your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">Password</label>
+                            <input id="reg-password" type="password" name="password" placeholder="Your password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-avatar">Upload profile avatar</label>
+                            <input id="reg-avatar" type="file" name="avatar" accept="image/*">
+                            <div class="image-preview" id="avatar-preview">Avatar preview will appear here.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-bio">Bio</label>
+                            <textarea id="reg-bio" rows="2" placeholder="Short profile bio"></textarea>
+                        </div>
+                        <button type="submit" class="button button-primary" id="register-submit">Login</button>
+                        <p id="register-status" class="register-status">Create a local account or login with an existing username.</p>
+                        <div id="account-summary" class="account-summary">
+                            <p class="register-note">Accounts are stored locally in this browser only.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="games-section" id="games">
+            <div class="section-header">
+                <p class="eyebrow">Featured</p>
+                <h2>Top Picks</h2>
+            </div>
+            <div class="game-grid">
+                <article class="game-card">
+                    <div class="game-badge">Action</div>
+                    <h3>Cyber Drift</h3>
+                    <p>High-speed city racing with neon visuals and intense multiplayer.</p>
+                    <button class="button button-tertiary">View Details</button>
+                </article>
+                <article class="game-card">
+                    <div class="game-badge">RPG</div>
+                    <h3>Shadow Frontier</h3>
+                    <p>Explore endless worlds, collect rare gear, and build your legend.</p>
+                    <button class="button button-tertiary">View Details</button>
+                </article>
+                <article class="game-card">
+                    <div class="game-badge">Strategy</div>
+                    <h3>Command Nexus</h3>
+                    <p>Lead your squad in tactical battles with stunning sci-fi visuals.</p>
+                    <button class="button button-tertiary">View Details</button>
+                </article>
+            </div>
+        </section>
+        <section class="steam-section" id="steam">
+            <div class="section-header">
+                <p class="eyebrow">Steam Community</p>
+                <h2>Steam Accounts</h2>
+            </div>
+            <div class="steam-grid">
+                <article class="steam-card account-card">
+                    <div class="steam-badge">FREE</div>
+                    <h3>New Account</h3>
+                    <p class="account-game">🎮 | [Mafia II Classic, Mafia II Definitive, Call of Juarez Gunslinger, Rage]</p>
+                    <div class="account-details">
+                        <div class="account-field">
+                            <span>👤 | User</span>
+                            <code>[ dukeangel70 ]</code>
+                        </div>
+                        <div class="account-field">
+                            <span>🔑 | Password</span>
+                            <code>[ 59https://t.me/SHAREDSTEAM ]</code>
+                        </div>
+                    </div>
+                    <a class="button button-tertiary" href="#" aria-label="View account details">View Account</a>
+                </article>
+                <article class="steam-card account-card">
+                    <div class="steam-badge">FREE</div>
+                    <h3>Free Account</h3>
+                    <p class="account-game">🎮 | [The Witcher 3: Wild Hunt]</p>
+                    <div class="account-details">
+                        <div class="account-field">
+                            <span>👤 | User</span>
+                            <code>[ asahiaki1 ]</code>
+                        </div>
+                        <div class="account-field">
+                            <span>🔑 | Password</span>
+                            <code>[ marpanov_free19 ]</code>
+                        </div>
+                    </div>
+                    <a class="button button-tertiary" href="#" aria-label="View account details">View Account</a>
+                </article>
+                <article class="steam-card account-card">
+                    <div class="steam-badge">FREE</div>
+                    <h3>Free Account</h3>
+                    <p class="account-game">🎮 | [Far Cry 3]</p>
+                    <div class="account-details">
+                        <div class="account-field">
+                            <span>👤 | User</span>
+                            <code>[ youallsuck_911 ]</code>
+                        </div>
+                        <div class="account-field">
+                            <span>🔑 | Password</span>
+                            <code>[ Adje2003a.1 ]</code>
+                        </div>
+                    </div>
+                    <a class="button button-tertiary" href="#" aria-label="View account details">View Account</a>
+                </article>
+            </div>
+            <p class="steam-note">Add your Steam accounts here or share favorite accounts with visitors.</p>
+        </section>
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <p class="eyebrow">About Us</p>
+                <h2>Built for players who want more.</h2>
+            </div>
+            <p class="about-copy">We deliver a polished gaming experience with fast browsing, curated collections, and immersive design. Whether you're searching for new releases or hidden gems, our platform keeps gaming fresh and exciting.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Curated Library</h3>
+                    <p>Handpicked games chosen for quality, innovation, and fun.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Modern UI</h3>
+                    <p>Dark theme, glassmorphism, and vivid accents create a premium feel.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast Updates</h3>
+                    <p>New games and recommendations added regularly.</p>
+                </div>
+            </div>
+        </section>
+        <section class="steamars-cta-section">
+            <div class="section-header">
+                <p class="eyebrow">Steamars Network</p>
+                <h2>The social video platform lives on its own page</h2>
+                <p class="about-copy">Steamars is now separated from the main home experience. Visit the dedicated platform page for clips, creators, and community interactions.</p>
+            </div>
+            <div class="cta-card">
+                <h3>Explore Steamars</h3>
+                <p>Access the full Steamars community, post clips, follow creators, and manage your profile from a separate social platform.</p>
+                <a class="button button-primary" href="steamars.html">Go to Steamars</a>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <p class="eyebrow">Stay connected</p>
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-card">
+                <p>Have questions or want a recommendation? Send us a message and we’ll help you find the perfect game.</p>
+                <div class="contact-actions">
+                    <a class="button button-primary" href="mailto:hello@gaminghub.com">Email Us</a>
+                    <button class="button button-secondary" id="start-game">Toggle Demo</button>
+                </div>
+                <div class="owner-card">
+                    <h3>Site Owner</h3>
+                    <p>Discord: <strong>the.radan</strong></p>
+                    <p>Built by <strong>the.radan</strong>.</p>
+                </div>
+                <div class="demo-panel" id="game-area">
+                    <p>Demo panel is hidden. Press the button to reveal a quick animation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Gaming Hub. Crafted for modern players.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
